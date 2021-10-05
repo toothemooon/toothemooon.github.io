@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "rollup -c",
-    "deploy": "gh-pages -d -public",
+    "deploy": "gh-pages -d public",
     "start": "sirv public --no-clear"
   },
   "devDependencies": {
