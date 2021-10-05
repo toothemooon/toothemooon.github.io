@@ -16,7 +16,7 @@
 	}
 
 	h1 {
-		color: purple;
+		color: blue;
 		text-transform: uppercase;
 		font-size: 4em;
 		font-weight: 100;
