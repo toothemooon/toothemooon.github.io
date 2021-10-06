@@ -11,14 +11,14 @@
 	main {
 		text-align: center;
 		padding: 1em;
-		max-width: 240px;
+		max-width: 260px;
 		margin: 0 auto;
 	}
 
 	h1 {
-		color: blue;
+		color:lightblue;
 		text-transform: uppercase;
-		font-size: 6em;
+		font-size: 8em;
 		font-weight: 150;
 	}
 
