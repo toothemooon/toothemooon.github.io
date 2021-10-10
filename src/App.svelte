@@ -18,7 +18,7 @@
 		<p>{beltColour} belt</p>
 		<input type="text" bind:value={firstName}>
 		<input type="text" bind:value={lastName}>
-		<input type='text' bind:value={beltColour}>
+		<input type='color' bind:value={beltColour}>
 	</main>
 	
 	<style>
