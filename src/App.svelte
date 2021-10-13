@@ -1,4 +1,13 @@
-<script>
+<script lang="ts">
+
+	import Modal from './Modal.svelte';
+
+	let showModal = false;
+
+	const toggleModal = () => {
+		showModal = !showModal;
+	}
+
 	let people = [
 		{ name: 'yoshi', beltColour: 'black', age: 25, id: 1 },
 		{ name: 'mario', beltColour: 'orange', age: 45, id: 2 },
@@ -8,12 +17,20 @@
 const handleClick = (id) => {
 	people = people.filter((person) => person.id != id);
 };
+
+let num =3;
 </script>
 
+<Modal message='not int' {showModal} on:click={toggleModal} />
+
 <main>
+	<button on:click|once={toggleModal}>Open Modal</button>
 	{#each people as person (person.id)}
 		<div>
 			<h4>{person.name}</h4>
+			{#if person.beltColour === 'black'}
+			  <p><strong>Master</strong></p>
+			{/if}
 			<p>{person.age} years old, {person.beltColour} belt.</p>
 			<button on:click={() => handleClick(person.id)}>delete</button>
 		</div>
