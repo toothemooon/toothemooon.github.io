@@ -1,9 +1,7 @@
 <script lang="ts">
 	import AddPersonForm from './AddPersonForm.svelte';
+	import Modal from './Modal.svelte';
 	
-	
-		import Modal from './Modal.svelte';
-		import AddPersonForm_ from './AddPersonForm.svelte';
 		let showModal = false;
 	
 		const toggleModal = () => {
